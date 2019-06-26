@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <Button
+        android:id="@+id/btnCGV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CGV"/>
+
+    <Button
+        android:id="@+id/btnLotte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lotte Cinema"/>
+
+    <Button
+        android:id="@+id/btnMEGABOX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEGABOX"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Url을 입력하세요"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:clickable="true"></WebView>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="홈으로 돌아가기"/>
+
+</LinearLayout>
